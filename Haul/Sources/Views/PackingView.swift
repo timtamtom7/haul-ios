@@ -6,6 +6,10 @@ struct PackingView: View {
     @State private var showingSuitcasePhoto = false
     @State private var showingAddItem = false
     @State private var showingPassportReminder = false
+    @State private var showingWeather = false
+    @State private var showingBags = false
+    @State private var showingTemplates = false
+    @State private var showingFeedback = false
 
     private var groupedItems: [String: [PackingItem]] {
         Dictionary(grouping: tripStore.currentTripItems, by: { $0.category })
@@ -57,8 +61,38 @@ struct PackingView: View {
                         .padding(.horizontal, 20)
                     }
 
+                    // Quick actions bar
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 10) {
+                            QuickActionButton(icon: "cloud.sun.fill", label: "Weather") {
+                                showingWeather = true
+                            }
+                            QuickActionButton(icon: "suitcase.2.fill", label: "Bags") {
+                                showingBags = true
+                            }
+                            QuickActionButton(icon: "doc.on.doc.fill", label: "Templates") {
+                                showingTemplates = true
+                            }
+                        }
+                        .padding(.horizontal, 20)
+                    }
+
+                    // Weather Widget (for upcoming/ongoing trips)
+                    if !trip.isPast {
+                        WeatherWidgetView(trip: trip)
+                            .padding(.horizontal, 20)
+                    }
+
+                    // Post-Trip Feedback Banner
+                    if trip.isPast {
+                        PostTripBannerView(trip: trip) {
+                            showingFeedback = true
+                        }
+                        .padding(.horizontal, 20)
+                    }
+
                     // Passport Reminder
-                    if showingPassportReminder {
+                    if showingPassportReminder && !trip.isPast {
                         PassportReminderCard {
                             markPassportPacked()
                         }
@@ -117,6 +151,28 @@ struct PackingView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Menu {
+                    Button {
+                        showingTemplates = true
+                    } label: {
+                        Label("Templates", systemImage: "doc.on.doc")
+                    }
+
+                    Button {
+                        showingBags = true
+                    } label: {
+                        Label("Bags", systemImage: "suitcase.2")
+                    }
+
+                    if trip.isPast {
+                        Button {
+                            showingFeedback = true
+                        } label: {
+                            Label("Give Feedback", systemImage: "star")
+                        }
+                    }
+
+                    Divider()
+
                     Button(role: .destructive) {
                         tripStore.deleteTrip(trip)
                     } label: {
@@ -144,10 +200,34 @@ struct PackingView: View {
             AddItemSheet(tripId: trip.id ?? 0)
                 .environmentObject(tripStore)
         }
+        .sheet(isPresented: $showingBags) {
+            BagsListView(trip: trip)
+                .environmentObject(tripStore)
+        }
+        .sheet(isPresented: $showingTemplates) {
+            TemplatesListView(tripId: trip.id) { template in
+                if let tripId = trip.id {
+                    tripStore.applyTemplate(template, to: tripId)
+                    tripStore.fetchItems(for: tripId)
+                }
+            }
+            .environmentObject(tripStore)
+        }
+        .sheet(isPresented: $showingWeather) {
+            WeatherDestinationSheet(
+                destination: .constant(""),
+                onConfirm: { _ in
+                    showingWeather = false
+                }
+            )
+        }
+        .sheet(isPresented: $showingFeedback) {
+            PostTripFeedbackView(trip: trip)
+                .environmentObject(tripStore)
+        }
     }
 
     private func checkPassportReminder() {
-        // Show passport reminder if trip is today or tomorrow and passport not packed
         let calendar = Calendar.current
         if let start = calendar.dateComponents([.year, .month, .day], from: trip.startDate).date,
            let today = calendar.dateComponents([.year, .month, .day], from: Date()).date {
@@ -166,6 +246,29 @@ struct PackingView: View {
             tripStore.toggleItem(passport)
         }
         showingPassportReminder = false
+    }
+}
+
+struct QuickActionButton: View {
+    let icon: String
+    let label: String
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: 8) {
+                Image(systemName: icon)
+                    .font(.system(size: 14))
+                Text(label)
+                    .font(.system(size: 13, weight: .medium))
+            }
+            .foregroundColor(HaulTheme.accent)
+            .padding(.horizontal, 14)
+            .padding(.vertical, 10)
+            .background(HaulTheme.accent.opacity(0.1))
+            .cornerRadius(20)
+        }
+        .buttonStyle(.plain)
     }
 }
 

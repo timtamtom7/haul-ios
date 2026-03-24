@@ -8,6 +8,9 @@ enum HaulError: Equatable {
     case itemSaveFailed
     case photoSaveFailed
     case emptyTrips
+    case templateSaveFailed
+    case weatherUnavailable
+    case bagCreationFailed
 
     var icon: String {
         switch self {
@@ -16,6 +19,9 @@ enum HaulError: Equatable {
         case .itemSaveFailed: return "exclamationmark.triangle.fill"
         case .photoSaveFailed: return "photo.fill"
         case .emptyTrips: return "suitcase"
+        case .templateSaveFailed: return "doc.on.doc.fill"
+        case .weatherUnavailable: return "cloud.fill"
+        case .bagCreationFailed: return "suitcase.2.fill"
         }
     }
 
@@ -26,6 +32,9 @@ enum HaulError: Equatable {
         case .itemSaveFailed: return "Couldn't save item"
         case .photoSaveFailed: return "Couldn't save photo"
         case .emptyTrips: return "No trips planned"
+        case .templateSaveFailed: return "Couldn't save template"
+        case .weatherUnavailable: return "Weather unavailable"
+        case .bagCreationFailed: return "Couldn't create bag"
         }
     }
 
@@ -41,6 +50,12 @@ enum HaulError: Equatable {
             return "The photo couldn't be saved. Make sure you have enough storage space."
         case .emptyTrips:
             return "Tap the button below to plan your first trip. Your suitcase is waiting."
+        case .templateSaveFailed:
+            return "Something went wrong saving your template. Please try again."
+        case .weatherUnavailable:
+            return "Couldn't fetch weather data. Check your connection and try again."
+        case .bagCreationFailed:
+            return "Something went wrong creating the bag. Please try again."
         }
     }
 
@@ -51,6 +66,9 @@ enum HaulError: Equatable {
         case .itemSaveFailed: return "Try Again"
         case .photoSaveFailed: return "Try Again"
         case .emptyTrips: return "New Trip"
+        case .templateSaveFailed: return "Try Again"
+        case .weatherUnavailable: return "Try Again"
+        case .bagCreationFailed: return "Try Again"
         }
     }
 
@@ -61,6 +79,9 @@ enum HaulError: Equatable {
         case .itemSaveFailed: return .orange
         case .photoSaveFailed: return .orange
         case .emptyTrips: return HaulTheme.accent
+        case .templateSaveFailed: return .orange
+        case .weatherUnavailable: return .blue
+        case .bagCreationFailed: return .orange
         }
     }
 }

@@ -20,6 +20,8 @@ struct NewTripSheet: View {
     @State private var showingCameraPermissionError = false
     @State private var showingItemSaveError = false
     @State private var showingPhotoSaveError = false
+    @State private var selectedTemplate: PackingTemplate?
+    @State private var showingTemplatePicker = false
 
     private let categories = DefaultCategories.all.map { $0.name }
 
@@ -282,6 +284,120 @@ struct NewTripSheet: View {
                     .font(.system(size: 17, weight: .semibold))
                     .foregroundColor(HaulTheme.textPrimary)
 
+                // Template picker
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("Start from template")
+                        .font(.system(size: 13, weight: .semibold))
+                        .foregroundColor(HaulTheme.textSecondary)
+                        .tracking(1)
+                        .textCase(.uppercase)
+
+                    Button {
+                        showingTemplatePicker = true
+                    } label: {
+                        HStack(spacing: 12) {
+                            ZStack {
+                                Circle()
+                                    .fill(HaulTheme.accent.opacity(0.12))
+                                    .frame(width: 40, height: 40)
+
+                                Image(systemName: selectedTemplate != nil ? "checkmark.circle.fill" : "doc.on.doc.fill")
+                                    .font(.system(size: 18))
+                                    .foregroundColor(HaulTheme.accent)
+                            }
+
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text(selectedTemplate?.name ?? "Choose a template")
+                                    .font(.system(size: 15, weight: .medium))
+                                    .foregroundColor(selectedTemplate != nil ? HaulTheme.textPrimary : HaulTheme.textSecondary)
+
+                                if let template = selectedTemplate {
+                                    Text("\(template.categories.reduce(0) { $0 + $1.items.count }) items")
+                                        .font(.system(size: 12))
+                                        .foregroundColor(HaulTheme.textSecondary)
+                                } else {
+                                    Text("Optional — pick a pre-built packing list")
+                                        .font(.system(size: 12))
+                                        .foregroundColor(HaulTheme.textSecondary)
+                                }
+                            }
+
+                            Spacer()
+
+                            if selectedTemplate != nil {
+                                Button {
+                                    selectedTemplate = nil
+                                    addedItems.removeAll()
+                                } label: {
+                                    Image(systemName: "xmark.circle.fill")
+                                        .foregroundColor(HaulTheme.textSecondary)
+                                }
+                            } else {
+                                Image(systemName: "chevron.right")
+                                    .font(.system(size: 13, weight: .semibold))
+                                    .foregroundColor(HaulTheme.textSecondary)
+                            }
+                        }
+                        .padding(12)
+                        .background(HaulTheme.surfaceLight)
+                        .cornerRadius(12)
+                    }
+                    .buttonStyle(.plain)
+                }
+
+                // Applied template items (read-only)
+                if let template = selectedTemplate {
+                    VStack(alignment: .leading, spacing: 8) {
+                        HStack {
+                            Text("From \(template.name)")
+                                .font(.system(size: 13, weight: .semibold))
+                                .foregroundColor(HaulTheme.textSecondary)
+                                .tracking(1)
+                                .textCase(.uppercase)
+
+                            Spacer()
+
+                            Text("\(addedItems.count) items")
+                                .font(.system(size: 12, design: .monospaced))
+                                .foregroundColor(HaulTheme.textSecondary)
+                        }
+
+                        FlowLayout(spacing: 8) {
+                            ForEach(addedItems.map { $0.name }, id: \.self) { item in
+                                Text(item)
+                                    .font(.system(size: 12))
+                                    .foregroundColor(HaulTheme.textPrimary)
+                                    .padding(.horizontal, 10)
+                                    .padding(.vertical, 6)
+                                    .background(HaulTheme.checkedGreen.opacity(0.15))
+                                    .cornerRadius(8)
+                            }
+                        }
+                    }
+                    .padding(12)
+                    .background(HaulTheme.checkedGreen.opacity(0.05))
+                    .cornerRadius(12)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(HaulTheme.checkedGreen.opacity(0.2), lineWidth: 1)
+                    )
+                }
+
+                // Divider
+                if selectedTemplate != nil {
+                    HStack {
+                        Rectangle()
+                            .fill(HaulTheme.unchecked.opacity(0.5))
+                            .frame(height: 1)
+                        Text("or add individually")
+                            .font(.system(size: 12))
+                            .foregroundColor(HaulTheme.textSecondary)
+                        Rectangle()
+                            .fill(HaulTheme.unchecked.opacity(0.5))
+                            .frame(height: 1)
+                    }
+                }
+
                 // Add custom item
                 VStack(alignment: .leading, spacing: 8) {
                     Text("Add Item")
@@ -329,14 +445,16 @@ struct NewTripSheet: View {
                         FlowLayout(spacing: 8) {
                             ForEach(category.items, id: \.self) { item in
                                 Button {
-                                    addedItems.append((name: item, category: category.name))
+                                    if selectedTemplate != nil || !addedItems.contains(where: { $0.name == item && $0.category == category.name }) {
+                                        addedItems.append((name: item, category: category.name))
+                                    }
                                 } label: {
                                     Text(item)
                                         .font(.system(size: 13))
-                                        .foregroundColor(HaulTheme.textPrimary)
+                                        .foregroundColor(addedItems.contains(where: { $0.name == item && $0.category == category.name }) ? HaulTheme.textSecondary : HaulTheme.textPrimary)
                                         .padding(.horizontal, 12)
                                         .padding(.vertical, 8)
-                                        .background(HaulTheme.surfaceLight)
+                                        .background(addedItems.contains(where: { $0.name == item && $0.category == category.name }) ? HaulTheme.unchecked.opacity(0.3) : HaulTheme.surfaceLight)
                                         .cornerRadius(20)
                                 }
                             }
@@ -381,6 +499,18 @@ struct NewTripSheet: View {
             .padding(.top, 16)
             .padding(.bottom, 100)
         }
+        .sheet(isPresented: $showingTemplatePicker) {
+            TemplatePickerSheet(onSelect: { template in
+                selectedTemplate = template
+                // Add template items to addedItems
+                addedItems.removeAll()
+                for cat in template.categories {
+                    for item in cat.items {
+                        addedItems.append((name: item, category: cat.name))
+                    }
+                }
+            })
+        }
     }
 
     private func saveTrip() {
@@ -410,6 +540,119 @@ struct NewTripSheet: View {
         ReminderService.shared.schedulePassportReminder(for: trip)
 
         dismiss()
+    }
+}
+
+struct TemplatePickerSheet: View {
+    @Environment(\.dismiss) var dismiss
+    let onSelect: (PackingTemplate) -> Void
+
+    private let builtInTemplates = PackingTemplate.builtInTemplates
+
+    var body: some View {
+        NavigationStack {
+            ZStack {
+                HaulTheme.background
+                    .ignoresSafeArea()
+
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 24) {
+                        Text("Choose a template to start your packing list")
+                            .font(.system(size: 14))
+                            .foregroundColor(HaulTheme.textSecondary)
+
+                        ForEach(builtInTemplates) { template in
+                            Button {
+                                onSelect(template)
+                                dismiss()
+                            } label: {
+                                TemplatePickerCard(template: template)
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.top, 16)
+                }
+            }
+            .navigationTitle("Choose Template")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Cancel") {
+                        dismiss()
+                    }
+                    .foregroundColor(HaulTheme.textSecondary)
+                }
+            }
+        }
+    }
+}
+
+struct TemplatePickerCard: View {
+    let template: PackingTemplate
+
+    private var totalItems: Int {
+        template.categories.reduce(0) { $0 + $1.items.count }
+    }
+
+    private var templateIcon: String {
+        switch template.name.lowercased() {
+        case let n where n.contains("beach"):
+            return "sun.max.fill"
+        case let n where n.contains("business"):
+            return "briefcase.fill"
+        case let n where n.contains("camping") || n.contains("adventure"):
+            return "figure.hiking"
+        case let n where n.contains("city"):
+            return "building.2.fill"
+        default:
+            return "suitcase.fill"
+        }
+    }
+
+    var body: some View {
+        HStack(spacing: 14) {
+            ZStack {
+                Circle()
+                    .fill(HaulTheme.accent.opacity(0.12))
+                    .frame(width: 52, height: 52)
+
+                Image(systemName: templateIcon)
+                    .font(.system(size: 22))
+                    .foregroundColor(HaulTheme.accent)
+            }
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text(template.name)
+                    .font(.system(size: 16, weight: .semibold))
+                    .foregroundColor(HaulTheme.textPrimary)
+
+                if !template.description.isEmpty {
+                    Text(template.description)
+                        .font(.system(size: 12))
+                        .foregroundColor(HaulTheme.textSecondary)
+                }
+
+                HStack(spacing: 6) {
+                    Text("\(template.categories.count) categories")
+                    Text("·")
+                        .foregroundColor(HaulTheme.textSecondary)
+                    Text("\(totalItems) items")
+                }
+                .font(.system(size: 12))
+                .foregroundColor(HaulTheme.textSecondary)
+            }
+
+            Spacer()
+
+            Image(systemName: "chevron.right")
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundColor(HaulTheme.textSecondary)
+        }
+        .padding(14)
+        .background(VisualEffectBlur(blurStyle: .systemMaterial))
+        .cornerRadius(16)
     }
 }
 
