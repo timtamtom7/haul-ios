@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 struct OnboardingContainerView: View {
     let onComplete: () -> Void
@@ -446,6 +447,8 @@ struct OnboardingPage4: View {
 
             // CTA Button
             Button {
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.success)
                 onComplete()
             } label: {
                 Text("Start your first trip")

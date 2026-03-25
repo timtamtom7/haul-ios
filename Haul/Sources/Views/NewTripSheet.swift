@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 import AVFoundation
 
 struct NewTripSheet: View {
@@ -89,6 +90,8 @@ struct NewTripSheet: View {
                             .disabled(currentStep == 0 && tripName.isEmpty)
                         } else {
                             Button {
+                                let generator = UINotificationFeedbackGenerator()
+                                generator.notificationOccurred(.success)
                                 saveTrip()
                             } label: {
                                 Text("Start Packing")

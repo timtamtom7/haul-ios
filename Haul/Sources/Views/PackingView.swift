@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 struct PackingView: View {
     @EnvironmentObject var tripStore: TripStore
@@ -10,6 +11,7 @@ struct PackingView: View {
     @State private var showingBags = false
     @State private var showingTemplates = false
     @State private var showingFeedback = false
+    @State private var showingShare = false
 
     private var groupedItems: [String: [PackingItem]] {
         Dictionary(grouping: tripStore.currentTripItems, by: { $0.category })
@@ -22,6 +24,30 @@ struct PackingView: View {
             let indexB = order.firstIndex(of: b) ?? Int.max
             return indexA < indexB
         }
+    }
+
+    private var shareText: String {
+        var text = "📦 \(trip.name) — Packing List\n"
+        text += "━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n"
+
+        let packed = tripStore.packedCount(for: trip.id ?? 0)
+        let total = tripStore.totalCount(for: trip.id ?? 0)
+        text += "Progress: \(packed)/\(total) packed\n\n"
+
+        for category in sortedCategories {
+            if let items = groupedItems[category] {
+                let catPacked = items.filter { $0.isPacked }.count
+                text += "【\(category)】 (\(catPacked)/\(items.count))\n"
+                for item in items {
+                    let check = item.isPacked ? "☑" : "☐"
+                    text += "  \(check) \(item.name)\n"
+                }
+                text += "\n"
+            }
+        }
+
+        text += "Sent via Haul ✦"
+        return text
     }
 
     var body: some View {
@@ -125,6 +151,8 @@ struct PackingView: View {
 
                     // Add item button
                     Button {
+                        let generator = UIImpactFeedbackGenerator(style: .light)
+                        generator.impactOccurred()
                         showingAddItem = true
                     } label: {
                         HStack {
@@ -161,6 +189,12 @@ struct PackingView: View {
                         showingBags = true
                     } label: {
                         Label("Bags", systemImage: "suitcase.2")
+                    }
+
+                    Button {
+                        showingShare = true
+                    } label: {
+                        Label("Share List", systemImage: "square.and.arrow.up")
                     }
 
                     if trip.isPast {
@@ -224,6 +258,9 @@ struct PackingView: View {
         .sheet(isPresented: $showingFeedback) {
             PostTripFeedbackView(trip: trip)
                 .environmentObject(tripStore)
+        }
+        .sheet(isPresented: $showingShare) {
+            ShareSheet(activityItems: [shareText])
         }
     }
 
@@ -339,6 +376,8 @@ struct PackingItemRow: View {
 
     var body: some View {
         Button {
+            let generator = UIImpactFeedbackGenerator(style: .medium)
+            generator.impactOccurred()
             onToggle()
         } label: {
             HStack(spacing: 12) {
@@ -536,6 +575,8 @@ struct AddItemSheet: View {
                     Spacer()
 
                     Button {
+                        let generator = UIImpactFeedbackGenerator(style: .medium)
+                        generator.impactOccurred()
                         if !itemName.isEmpty {
                             tripStore.addItem(to: tripId, name: itemName, category: selectedCategory)
                             dismiss()

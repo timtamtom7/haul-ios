@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 struct TripsListView: View {
     @EnvironmentObject var tripStore: TripStore
@@ -160,6 +161,8 @@ struct TripsListView: View {
     }
 
     private func handleNewTripTap() {
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.impactOccurred()
         if canCreateTrip {
             showingNewTrip = true
         } else {
