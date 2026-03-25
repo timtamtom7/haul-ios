@@ -63,7 +63,9 @@ class TripStore: ObservableObject {
 
     private func setupDatabase() {
         do {
-            let documentsPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+            guard let documentsPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
+                return
+            }
             let dbPath = documentsPath.appendingPathComponent("haul.sqlite3")
             db = try Connection(dbPath.path)
 
@@ -243,8 +245,12 @@ class TripStore: ObservableObject {
     }
 
     func addItems(to tripIdValue: Int64, itemNames: [String], category: String, bagId: Int64? = nil) {
+        // Get existing item names to avoid duplicates
+        let existingNames = Set(currentTripItems.filter { $0.tripId == tripIdValue }.map { $0.name.lowercased() })
         for name in itemNames {
-            addItem(to: tripIdValue, name: name, category: category, bagId: bagId)
+            if !existingNames.contains(name.lowercased()) {
+                addItem(to: tripIdValue, name: name, category: category, bagId: bagId)
+            }
         }
     }
 

@@ -133,6 +133,16 @@ struct PackingView: View {
                             .padding(.horizontal, 20)
                     }
 
+                    // Empty packing list state
+                    if sortedCategories.isEmpty {
+                        EmptyPackingListView {
+                            showingAddItem = true
+                            let generator = UIImpactFeedbackGenerator(style: .light)
+                            generator.impactOccurred()
+                        }
+                        .padding(.horizontal, 20)
+                    }
+
                     // Items grouped by category
                     ForEach(sortedCategories, id: \.self) { category in
                         if let items = groupedItems[category] {
@@ -306,6 +316,61 @@ struct QuickActionButton: View {
             .cornerRadius(20)
         }
         .buttonStyle(.plain)
+    }
+}
+
+struct EmptyPackingListView: View {
+    let onAddItem: () -> Void
+
+    var body: some View {
+        VStack(spacing: 16) {
+            ZStack {
+                Circle()
+                    .fill(HaulTheme.accent.opacity(0.08))
+                    .frame(width: 80, height: 80)
+
+                Image(systemName: "checklist")
+                    .font(.system(size: 32))
+                    .foregroundColor(HaulTheme.accent)
+            }
+
+            VStack(spacing: 6) {
+                Text("Your packing list is empty")
+                    .font(.system(size: 17, weight: .semibold))
+                    .foregroundColor(HaulTheme.textPrimary)
+
+                Text("Add items to start packing, or apply a template to get started quickly.")
+                    .font(.system(size: 14))
+                    .foregroundColor(HaulTheme.textSecondary)
+                    .multilineTextAlignment(.center)
+                    .lineSpacing(3)
+            }
+
+            Button {
+                onAddItem()
+            } label: {
+                HStack(spacing: 8) {
+                    Image(systemName: "plus.circle.fill")
+                    Text("Add First Item")
+                }
+                .font(.system(size: 15, weight: .semibold))
+                .foregroundColor(.white)
+                .padding(.horizontal, 20)
+                .padding(.vertical, 12)
+                .background(HaulTheme.accent)
+                .cornerRadius(10)
+            }
+        }
+        .padding(.vertical, 24)
+        .frame(maxWidth: .infinity)
+        .background(
+            VisualEffectBlur(blurStyle: .systemMaterial)
+        )
+        .cornerRadius(16)
+        .overlay(
+            RoundedRectangle(cornerRadius: 16)
+                .stroke(HaulTheme.unchecked.opacity(0.3), lineWidth: 1)
+        )
     }
 }
 
