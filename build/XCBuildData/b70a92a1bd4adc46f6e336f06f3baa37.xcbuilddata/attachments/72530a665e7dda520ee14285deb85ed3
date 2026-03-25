@@ -1,0 +1,259 @@
+{
+  "" : {
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Haul-primary.dia",
+    "emit-module-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Haul-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Haul-primary-emit-module.dia",
+    "pch" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Haul-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Haul-primary.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/App/HaulApp.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/HaulApp.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/HaulApp.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/HaulApp.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/HaulApp.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/HaulApp.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/HaulApp.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/HaulApp.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/HaulApp~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Models/Bag.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Bag.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Bag.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Bag.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Bag.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Bag.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Bag.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Bag.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Bag~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Models/PackingItem.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PackingItem.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PackingItem.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PackingItem.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PackingItem.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PackingItem.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PackingItem.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PackingItem.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PackingItem~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Models/Trip.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Trip.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Trip.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Trip.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Trip.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Trip.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Trip.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Trip.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Trip~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Services/CameraService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CameraService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CameraService.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CameraService.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CameraService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CameraService.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CameraService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CameraService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CameraService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Services/PhotoStorageService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PhotoStorageService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PhotoStorageService.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PhotoStorageService.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PhotoStorageService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PhotoStorageService.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PhotoStorageService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PhotoStorageService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PhotoStorageService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Services/ReminderService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ReminderService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ReminderService.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ReminderService.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ReminderService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ReminderService.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ReminderService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ReminderService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ReminderService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Services/SubscriptionManager.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SubscriptionManager.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SubscriptionManager.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SubscriptionManager.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SubscriptionManager.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SubscriptionManager.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SubscriptionManager.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SubscriptionManager.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SubscriptionManager~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Services/TripStore.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TripStore.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TripStore.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TripStore.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TripStore.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TripStore.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TripStore.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TripStore.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TripStore~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Services/WeatherService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherService.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherService.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherService.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Utilities/Theme.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Theme.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Theme.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Theme.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Theme.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Theme.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Theme.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Theme.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/Theme~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/BagsListView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/BagsListView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/BagsListView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/BagsListView.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/BagsListView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/BagsListView.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/BagsListView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/BagsListView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/BagsListView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/CameraView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CameraView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CameraView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CameraView.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CameraView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CameraView.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CameraView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CameraView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CameraView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/ErrorStateView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ErrorStateView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ErrorStateView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ErrorStateView.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ErrorStateView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ErrorStateView.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ErrorStateView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ErrorStateView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ErrorStateView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/NewTripSheet.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/NewTripSheet.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/NewTripSheet.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/NewTripSheet.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/NewTripSheet.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/NewTripSheet.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/NewTripSheet.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/NewTripSheet.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/NewTripSheet~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/OnboardingView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/OnboardingView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/OnboardingView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/OnboardingView.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/OnboardingView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/OnboardingView.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/OnboardingView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/OnboardingView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/OnboardingView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/PackingView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PackingView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PackingView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PackingView.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PackingView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PackingView.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PackingView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PackingView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PackingView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/PostTripFeedbackView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PostTripFeedbackView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PostTripFeedbackView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PostTripFeedbackView.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PostTripFeedbackView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PostTripFeedbackView.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PostTripFeedbackView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PostTripFeedbackView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PostTripFeedbackView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/PricingView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PricingView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PricingView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PricingView.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PricingView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PricingView.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PricingView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PricingView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/PricingView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/SettingsView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/SuitcasePhotoView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SuitcasePhotoView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SuitcasePhotoView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SuitcasePhotoView.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SuitcasePhotoView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SuitcasePhotoView.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SuitcasePhotoView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SuitcasePhotoView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SuitcasePhotoView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/TemplatesListView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TemplatesListView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TemplatesListView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TemplatesListView.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TemplatesListView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TemplatesListView.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TemplatesListView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TemplatesListView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TemplatesListView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/TripsListView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TripsListView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TripsListView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TripsListView.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TripsListView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TripsListView.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TripsListView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TripsListView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/TripsListView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/WeatherWidgetView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherWidgetView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherWidgetView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherWidgetView.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherWidgetView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherWidgetView.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherWidgetView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherWidgetView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherWidgetView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

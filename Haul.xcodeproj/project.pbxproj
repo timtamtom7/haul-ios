@@ -16,30 +16,63 @@
 		37AAB2E27ACBEBC4AE7910D1 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947CA10EDE599CF6078CD0A1 /* Theme.swift */; };
 		3884F648CF78BAC6BBE8DDFC /* TripsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98752344D04FDEBD80BD948 /* TripsListView.swift */; };
 		3B7602BCB8F6016C18A81E52 /* WeatherWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7947C89902DDE22D11370B /* WeatherWidgetView.swift */; };
+		483DA11F8375F735068E74E6 /* HaulWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 163D6E60768932DDEF10F7AA /* HaulWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		57D965350BD84B69A35C8432 /* PackingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C85B479EB189A379FA7721A /* PackingItem.swift */; };
 		5E57FDF185944860CF9F4CFB /* HaulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A769FE440B9672EC97CE18A /* HaulApp.swift */; };
 		5F952AF4C46CD68D939EAA32 /* PackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2976A0F061C7E1D43437D0B /* PackingView.swift */; };
+		675888C06545F78A058EDF47 /* CommunityTemplatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1297D3EFCE0129F3072F7 /* CommunityTemplatesView.swift */; };
 		6D6A504DF0559F87C49A2004 /* PhotoStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2C84A562BEF90290103797 /* PhotoStorageService.swift */; };
 		792C61A0D1F9B1F6CAE018F9 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 97290B257DFA756D54B924D7 /* SQLite */; };
 		85050883A160175077E3D964 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893018187A8C55817F4E7B7 /* SubscriptionManager.swift */; };
 		91FE070AED0EB49C8B9BE8B9 /* ErrorStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCA66EE46202BA10CFC69AC /* ErrorStateView.swift */; };
+		93DDA878667DDD7E837143CB /* PrintChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78C847F4D2559AFDFD7B44C /* PrintChecklistView.swift */; };
 		9E3F67D63974B15DA2CB3D68 /* NewTripSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA25CE7553A3D0D756A110D /* NewTripSheet.swift */; };
 		A284A38947E771DE86ECEC86 /* PricingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796881B87C528003BAD62C4 /* PricingView.swift */; };
 		BC44FC6D0549D00BE40F320E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF0D4B663F68F8983007253 /* SettingsView.swift */; };
+		C227D8B713628F5379AF1869 /* WardrobeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD06F07CBEEAE791C47D48 /* WardrobeView.swift */; };
 		C258891C73B79C8B0AD41613 /* ReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B329ED00B1EC59B20AF73686 /* ReminderService.swift */; };
 		C803DC285C05AAF3A8230579 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966C8631033EE9C7EB1BCD65 /* CameraView.swift */; };
 		CE6A6C0CAC7432C849F54498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DBDAA7CDAE2C03257BBF60 /* Assets.xcassets */; };
 		D3E84D1A5FBDC1ED18AE1157 /* BagsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874726548C7413D6E567AB6A /* BagsListView.swift */; };
 		D423E545BB1229A2772B51BE /* TemplatesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE5D95C41B166A618293AF0 /* TemplatesListView.swift */; };
 		E830F6B48B7CBFB1F75359D1 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37CA87722249592B8E1A054 /* WeatherService.swift */; };
+		FF8AE7C3E0DAE507B18951F9 /* HaulWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470C258DFCFA2F226C206E8C /* HaulWidget.swift */; };
 		FFC689EC902782FE87C2D74A /* TripStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A6C98A04CD47BA1EDE320 /* TripStore.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3E5D0E6CDD06DBF46A071246 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59D8FA70EF04104D98C36058 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31214699F721EDCB2ADC534B;
+			remoteInfo = HaulWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1941151AAF762B00EDBA6DB8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				483DA11F8375F735068E74E6 /* HaulWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0C85B479EB189A379FA7721A /* PackingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingItem.swift; sourceTree = "<group>"; };
+		163D6E60768932DDEF10F7AA /* HaulWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = HaulWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F3A8005E0EB563B45987993 /* Haul.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Haul.entitlements; sourceTree = "<group>"; };
+		22A1297D3EFCE0129F3072F7 /* CommunityTemplatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTemplatesView.swift; sourceTree = "<group>"; };
 		2567FD0B5DDDCA58140F0ECB /* SuitcasePhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuitcasePhotoView.swift; sourceTree = "<group>"; };
 		2893018187A8C55817F4E7B7 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
 		2B2C84A562BEF90290103797 /* PhotoStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStorageService.swift; sourceTree = "<group>"; };
+		470C258DFCFA2F226C206E8C /* HaulWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaulWidget.swift; sourceTree = "<group>"; };
 		4A769FE440B9672EC97CE18A /* HaulApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaulApp.swift; sourceTree = "<group>"; };
 		6C2F0152D64B63F9C53E2AA9 /* Haul.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Haul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DBDAA7CDAE2C03257BBF60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +82,7 @@
 		8E7947C89902DDE22D11370B /* WeatherWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWidgetView.swift; sourceTree = "<group>"; };
 		947CA10EDE599CF6078CD0A1 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		966C8631033EE9C7EB1BCD65 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		9FFD06F07CBEEAE791C47D48 /* WardrobeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardrobeView.swift; sourceTree = "<group>"; };
 		A37CA87722249592B8E1A054 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		AFE5D95C41B166A618293AF0 /* TemplatesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatesListView.swift; sourceTree = "<group>"; };
 		B329ED00B1EC59B20AF73686 /* ReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderService.swift; sourceTree = "<group>"; };
@@ -56,10 +90,12 @@
 		BD95BCA3B8BA4FEA3FE66A67 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		BEAC68586B630B1E78926D4A /* Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
 		BFCA66EE46202BA10CFC69AC /* ErrorStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorStateView.swift; sourceTree = "<group>"; };
+		C1ACB6D0D566EAC84BD15320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D2AAA6669EC49EDB3FF7FC84 /* PostTripFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTripFeedbackView.swift; sourceTree = "<group>"; };
 		DCA25CE7553A3D0D756A110D /* NewTripSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTripSheet.swift; sourceTree = "<group>"; };
 		DCF0D4B663F68F8983007253 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F2976A0F061C7E1D43437D0B /* PackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingView.swift; sourceTree = "<group>"; };
+		F78C847F4D2559AFDFD7B44C /* PrintChecklistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintChecklistView.swift; sourceTree = "<group>"; };
 		F796881B87C528003BAD62C4 /* PricingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricingView.swift; sourceTree = "<group>"; };
 		F98752344D04FDEBD80BD948 /* TripsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,16 +130,19 @@
 			children = (
 				874726548C7413D6E567AB6A /* BagsListView.swift */,
 				966C8631033EE9C7EB1BCD65 /* CameraView.swift */,
+				22A1297D3EFCE0129F3072F7 /* CommunityTemplatesView.swift */,
 				BFCA66EE46202BA10CFC69AC /* ErrorStateView.swift */,
 				DCA25CE7553A3D0D756A110D /* NewTripSheet.swift */,
 				819E1E53CD9F799E8E92DE37 /* OnboardingView.swift */,
 				F2976A0F061C7E1D43437D0B /* PackingView.swift */,
 				D2AAA6669EC49EDB3FF7FC84 /* PostTripFeedbackView.swift */,
 				F796881B87C528003BAD62C4 /* PricingView.swift */,
+				F78C847F4D2559AFDFD7B44C /* PrintChecklistView.swift */,
 				DCF0D4B663F68F8983007253 /* SettingsView.swift */,
 				2567FD0B5DDDCA58140F0ECB /* SuitcasePhotoView.swift */,
 				AFE5D95C41B166A618293AF0 /* TemplatesListView.swift */,
 				F98752344D04FDEBD80BD948 /* TripsListView.swift */,
+				9FFD06F07CBEEAE791C47D48 /* WardrobeView.swift */,
 				8E7947C89902DDE22D11370B /* WeatherWidgetView.swift */,
 			);
 			path = Views;
@@ -128,9 +167,19 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		75F9DB9D78FEEBFA52A33381 /* HaulWidget */ = {
+			isa = PBXGroup;
+			children = (
+				470C258DFCFA2F226C206E8C /* HaulWidget.swift */,
+				C1ACB6D0D566EAC84BD15320 /* Info.plist */,
+			);
+			path = HaulWidget;
+			sourceTree = "<group>";
+		};
 		A534874D75790E206DBCD40C /* App */ = {
 			isa = PBXGroup;
 			children = (
+				1F3A8005E0EB563B45987993 /* Haul.entitlements */,
 				4A769FE440B9672EC97CE18A /* HaulApp.swift */,
 			);
 			path = App;
@@ -161,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				6C2F0152D64B63F9C53E2AA9 /* Haul.app */,
+				163D6E60768932DDEF10F7AA /* HaulWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +218,7 @@
 		F68AF2BCF2696B1DEC4339C5 = {
 			isa = PBXGroup;
 			children = (
+				75F9DB9D78FEEBFA52A33381 /* HaulWidget */,
 				3F458B4912DEA255D87764DF /* Resources */,
 				DEF44788629971F5372C53A4 /* Sources */,
 				E9B0828770C01CA068A14802 /* Products */,
@@ -177,6 +228,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		31214699F721EDCB2ADC534B /* HaulWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD0E2799F977E1F2219C59AD /* Build configuration list for PBXNativeTarget "HaulWidget" */;
+			buildPhases = (
+				777BFE8EC24A849ADA70AF56 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HaulWidget;
+			productName = HaulWidget;
+			productReference = 163D6E60768932DDEF10F7AA /* HaulWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C39870491454773D2AACF262 /* Haul */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0C41CC7C74F063BDABD697D /* Build configuration list for PBXNativeTarget "Haul" */;
@@ -184,10 +250,12 @@
 				8A158B4FD0F20B817291BC60 /* Sources */,
 				C4C09F6BF0B7F84253469CF5 /* Resources */,
 				29A27BB2DDEA37BE3BFC0D1F /* Frameworks */,
+				1941151AAF762B00EDBA6DB8 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8C1B15221A2F4DB55B079A1D /* PBXTargetDependency */,
 			);
 			name = Haul;
 			packageProductDependencies = (
@@ -206,6 +274,9 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					31214699F721EDCB2ADC534B = {
+						ProvisioningStyle = Automatic;
+					};
 					C39870491454773D2AACF262 = {
 						ProvisioningStyle = Automatic;
 					};
@@ -227,6 +298,7 @@
 			projectRoot = "";
 			targets = (
 				C39870491454773D2AACF262 /* Haul */,
+				31214699F721EDCB2ADC534B /* HaulWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +315,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		777BFE8EC24A849ADA70AF56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8AE7C3E0DAE507B18951F9 /* HaulWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A158B4FD0F20B817291BC60 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,6 +331,7 @@
 				D3E84D1A5FBDC1ED18AE1157 /* BagsListView.swift in Sources */,
 				239700AA4716EDA3B5EB54D7 /* CameraService.swift in Sources */,
 				C803DC285C05AAF3A8230579 /* CameraView.swift in Sources */,
+				675888C06545F78A058EDF47 /* CommunityTemplatesView.swift in Sources */,
 				91FE070AED0EB49C8B9BE8B9 /* ErrorStateView.swift in Sources */,
 				5E57FDF185944860CF9F4CFB /* HaulApp.swift in Sources */,
 				9E3F67D63974B15DA2CB3D68 /* NewTripSheet.swift in Sources */,
@@ -260,6 +341,7 @@
 				6D6A504DF0559F87C49A2004 /* PhotoStorageService.swift in Sources */,
 				03E63737DA7AE811722BE852 /* PostTripFeedbackView.swift in Sources */,
 				A284A38947E771DE86ECEC86 /* PricingView.swift in Sources */,
+				93DDA878667DDD7E837143CB /* PrintChecklistView.swift in Sources */,
 				C258891C73B79C8B0AD41613 /* ReminderService.swift in Sources */,
 				BC44FC6D0549D00BE40F320E /* SettingsView.swift in Sources */,
 				85050883A160175077E3D964 /* SubscriptionManager.swift in Sources */,
@@ -269,6 +351,7 @@
 				188EA5256A069828D1EEED1A /* Trip.swift in Sources */,
 				FFC689EC902782FE87C2D74A /* TripStore.swift in Sources */,
 				3884F648CF78BAC6BBE8DDFC /* TripsListView.swift in Sources */,
+				C227D8B713628F5379AF1869 /* WardrobeView.swift in Sources */,
 				E830F6B48B7CBFB1F75359D1 /* WeatherService.swift in Sources */,
 				3B7602BCB8F6016C18A81E52 /* WeatherWidgetView.swift in Sources */,
 			);
@@ -276,12 +359,21 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8C1B15221A2F4DB55B079A1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31214699F721EDCB2ADC534B /* HaulWidget */;
+			targetProxy = 3E5D0E6CDD06DBF46A071246 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		1529B1D82534A60E02FA1ED3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Haul/Sources/App/Haul.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
@@ -295,11 +387,30 @@
 			};
 			name = Release;
 		};
+		267245D294480FA6EB7650E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HaulWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haul.app.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		509F8112B8235D09FDA6E87E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Haul/Sources/App/Haul.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
@@ -312,6 +423,24 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		6D60B96B4E61B8C2141F19F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HaulWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haul.app.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
 		};
 		96B8E7A3E8391FE95D5B0451 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -462,6 +591,15 @@
 			buildConfigurations = (
 				96B8E7A3E8391FE95D5B0451 /* Debug */,
 				DC930C25D86163C2E9FE93D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DD0E2799F977E1F2219C59AD /* Build configuration list for PBXNativeTarget "HaulWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				267245D294480FA6EB7650E1 /* Debug */,
+				6D60B96B4E61B8C2141F19F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

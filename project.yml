@@ -36,6 +36,7 @@ targets:
     dependencies:
       - package: SQLite.swift
         product: SQLite
+      - target: HaulWidget
     settings:
       base:
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
@@ -43,3 +44,17 @@ targets:
         CODE_SIGN_STYLE: Automatic
         PRODUCT_BUNDLE_IDENTIFIER: com.haul.app
         ENABLE_PREVIEWS: YES
+        CODE_SIGN_ENTITLEMENTS: Haul/Sources/App/Haul.entitlements
+
+  HaulWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: HaulWidget
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.haul.app.widget
+        CODE_SIGN_STYLE: Automatic
+        SKIP_INSTALL: YES
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: HaulWidget/Info.plist

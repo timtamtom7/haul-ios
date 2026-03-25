@@ -12,6 +12,9 @@ struct PackingView: View {
     @State private var showingTemplates = false
     @State private var showingFeedback = false
     @State private var showingShare = false
+    @State private var showingWardrobe = false
+    @State private var showingCommunity = false
+    @State private var showingPrint = false
 
     private var groupedItems: [String: [PackingItem]] {
         Dictionary(grouping: tripStore.currentTripItems, by: { $0.category })
@@ -98,6 +101,15 @@ struct PackingView: View {
                             }
                             QuickActionButton(icon: "doc.on.doc.fill", label: "Templates") {
                                 showingTemplates = true
+                            }
+                            QuickActionButton(icon: "tshirt.fill", label: "Wardrobe") {
+                                showingWardrobe = true
+                            }
+                            QuickActionButton(icon: "globe", label: "Community") {
+                                showingCommunity = true
+                            }
+                            QuickActionButton(icon: "printer.fill", label: "Print") {
+                                showingPrint = true
                             }
                         }
                         .padding(.horizontal, 20)
@@ -202,9 +214,33 @@ struct PackingView: View {
                     }
 
                     Button {
+                        showingTemplates = true
+                    } label: {
+                        Label("Templates", systemImage: "doc.on.doc")
+                    }
+
+                    Button {
+                        showingCommunity = true
+                    } label: {
+                        Label("Community", systemImage: "globe")
+                    }
+
+                    Button {
                         showingShare = true
                     } label: {
                         Label("Share List", systemImage: "square.and.arrow.up")
+                    }
+
+                    Button {
+                        showingPrint = true
+                    } label: {
+                        Label("Print / PDF", systemImage: "printer")
+                    }
+
+                    Button {
+                        showingWardrobe = true
+                    } label: {
+                        Label("Wardrobe", systemImage: "tshirt")
                     }
 
                     if trip.isPast {
@@ -271,6 +307,22 @@ struct PackingView: View {
         }
         .sheet(isPresented: $showingShare) {
             ShareSheet(activityItems: [shareText])
+        }
+        .sheet(isPresented: $showingWardrobe) {
+            WardrobeView(tripId: trip.id ?? 0)
+                .environmentObject(tripStore)
+        }
+        .sheet(isPresented: $showingCommunity) {
+            CommunityTemplatesView(tripId: trip.id) { template in
+                if let tripId = trip.id {
+                    tripStore.applyTemplate(template, to: tripId)
+                    tripStore.fetchItems(for: tripId)
+                }
+            }
+            .environmentObject(tripStore)
+        }
+        .sheet(isPresented: $showingPrint) {
+            PrintPreviewView(trip: trip, items: tripStore.currentTripItems)
         }
     }
 
