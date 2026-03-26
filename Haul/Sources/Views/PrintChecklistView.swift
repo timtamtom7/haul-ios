@@ -146,8 +146,8 @@ struct PrintPreviewView: View {
                         .foregroundColor(Color(hex: "c4956a"))
                 }
                 ToolbarItem(placement: .topBarTrailing) {
-                    if pdfData != nil {
-                        ShareLink(item: pdfData!, preview: SharePreview("Packing List for \(trip.name)", image: Image(systemName: "doc.fill"))) {
+                    if let data = pdfData {
+                        ShareLink(item: data, preview: SharePreview("Packing List for \(trip.name)", image: Image(systemName: "doc.fill"))) {
                             Image(systemName: "square.and.arrow.up")
                                 .foregroundColor(Color(hex: "c4956a"))
                         }

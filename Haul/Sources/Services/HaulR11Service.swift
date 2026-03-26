@@ -145,8 +145,8 @@ final class PostTripLearningService: ObservableObject {
     private func generateSuggestions(forgotten: [String], neverUsed: [String], rating: Int) -> [String] {
         var suggestions: [String] = []
 
-        if !forgotten.isEmpty {
-            suggestions.append("Add '\(forgotten.first!)' to your essentials list")
+        if let first = forgotten.first {
+            suggestions.append("Add '\(first)' to your essentials list")
         }
 
         if neverUsed.count > 3 {
