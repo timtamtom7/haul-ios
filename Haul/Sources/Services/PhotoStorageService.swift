@@ -7,7 +7,7 @@ class PhotoStorageService {
     private let fileManager = FileManager.default
 
     private var documentsDirectory: URL {
-        fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
+        fileManager.urls(for: .documentDirectory, in: .userDomainMask).first ?? URL(fileURLWithPath: NSTemporaryDirectory())
     }
 
     private var photosDirectory: URL {
