@@ -6,13 +6,15 @@ struct PackingItem: Identifiable, Equatable {
     var name: String
     var category: String
     var isPacked: Bool
+    var bagId: Int64?
 
-    init(id: Int64? = nil, tripId: Int64, name: String, category: String, isPacked: Bool = false) {
+    init(id: Int64? = nil, tripId: Int64, name: String, category: String, isPacked: Bool = false, bagId: Int64? = nil) {
         self.id = id
         self.tripId = tripId
         self.name = name
         self.category = category
         self.isPacked = isPacked
+        self.bagId = bagId
     }
 }
 

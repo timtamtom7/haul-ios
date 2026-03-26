@@ -188,6 +188,69 @@ class TripStore: ObservableObject {
         }
     }
 
+    /// Duplicates a trip with all its items and bags.
+    /// Dates are shifted so the new trip starts today (if original is past/upcoming) or at the same relative offset.
+    func duplicateTrip(_ trip: Trip) -> Int64? {
+        guard let db = db, let originalId = trip.id else { return nil }
+
+        // Calculate new dates: shift so the original start date aligns to today
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: Date())
+        let originalStart = calendar.startOfDay(for: trip.startDate)
+        let tripDuration = calendar.dateComponents([.day], from: trip.startDate, to: trip.endDate).day ?? 7
+
+        let daysOffset = calendar.dateComponents([.day], from: originalStart, to: today).day ?? 0
+        let newStartDate = calendar.date(byAdding: .day, value: daysOffset, to: trip.startDate) ?? trip.startDate
+        let newEndDate = calendar.date(byAdding: .day, value: tripDuration, to: newStartDate) ?? trip.endDate
+
+        // Create the new trip
+        guard let newTripId = createTrip(
+            name: "\(trip.name) (Copy)",
+            startDate: newStartDate,
+            endDate: newEndDate,
+            suitcasePhotoPath: nil
+        ) else { return nil }
+
+        do {
+            // Copy bags and build old→new ID mapping
+            var bagIdMapping: [Int64: Int64] = [:]
+            let originalBags = bags.filter(bagTripId == originalId)
+            for bagRow in try db.prepare(originalBags) {
+                let originalBagId = bagRow[bagId]
+                let insert = bags.insert(
+                    bagTripId <- newTripId,
+                    bagName <- bagRow[bagName],
+                    bagType <- bagRow[bagType],
+                    bagColorHex <- bagRow[bagColorHex],
+                    bagCreatedAt <- Date()
+                )
+                let newBagId = try db.run(insert)
+                bagIdMapping[originalBagId] = newBagId
+            }
+
+            // Copy items with remapped bag IDs
+            let originalItems = items.filter(itemTripId == originalId)
+            for itemRow in try db.prepare(originalItems) {
+                let originalBagId = itemRow[itemBagId]
+                let newBagId: Int64? = originalBagId.flatMap { bagIdMapping[$0] }
+                let insert = items.insert(
+                    itemTripId <- newTripId,
+                    itemName <- itemRow[itemName],
+                    itemCategory <- itemRow[itemCategory],
+                    itemIsPacked <- false,
+                    itemBagId <- newBagId
+                )
+                try db.run(insert)
+            }
+
+            fetchAllTrips()
+            return newTripId
+        } catch {
+            print("Duplicate trip error: \(error)")
+            return nil
+        }
+    }
+
     // MARK: - Items
 
     func fetchItems(for tripIdValue: Int64) {
@@ -200,7 +263,8 @@ class TripStore: ObservableObject {
                     tripId: row[itemTripId],
                     name: row[itemName],
                     category: row[itemCategory],
-                    isPacked: row[itemIsPacked]
+                    isPacked: row[itemIsPacked],
+                    bagId: row[itemBagId]
                 )
             }
         } catch {
@@ -218,7 +282,8 @@ class TripStore: ObservableObject {
                     tripId: row[itemTripId],
                     name: row[itemName],
                     category: row[itemCategory],
-                    isPacked: row[itemIsPacked]
+                    isPacked: row[itemIsPacked],
+                    bagId: row[itemBagId]
                 )
             }
         } catch {
@@ -584,7 +649,8 @@ class TripStore: ObservableObject {
                     tripId: row[itemTripId],
                     name: row[itemName],
                     category: row[itemCategory],
-                    isPacked: row[itemIsPacked]
+                    isPacked: row[itemIsPacked],
+                    bagId: row[itemBagId]
                 )
             }
         } catch {

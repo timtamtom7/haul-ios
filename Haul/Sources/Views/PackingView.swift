@@ -1,5 +1,6 @@
 import SwiftUI
 import UIKit
+import os.log
 
 struct PackingView: View {
     @EnvironmentObject var tripStore: TripStore
@@ -15,6 +16,13 @@ struct PackingView: View {
     @State private var showingWardrobe = false
     @State private var showingCommunity = false
     @State private var showingPrint = false
+    @State private var showingWeatherSuggestions = false
+    @State private var showingExportSheet = false
+    @State private var showingDuplicateSuccess = false
+    @State private var weatherSuggestions: [WeatherSuggestion] = []
+    @State private var weatherDestination: String = ""
+
+    private let logger = Logger(subsystem: "com.haulapp.ios", category: "PackingView")
 
     private var groupedItems: [String: [PackingItem]] {
         Dictionary(grouping: tripStore.currentTripItems, by: { $0.category })
@@ -110,6 +118,9 @@ struct PackingView: View {
                             }
                             QuickActionButton(icon: "printer.fill", label: "Print") {
                                 showingPrint = true
+                            }
+                            QuickActionButton(icon: "sparkles", label: "Smart Tips") {
+                                showingWeather = true
                             }
                         }
                         .padding(.horizontal, 20)
@@ -247,6 +258,20 @@ struct PackingView: View {
 
                     Divider()
 
+                    Button {
+                        duplicateTrip()
+                    } label: {
+                        Label("Duplicate Trip", systemImage: "doc.on.doc.fill")
+                    }
+
+                    Button {
+                        showingExportSheet = true
+                    } label: {
+                        Label("Export", systemImage: "square.and.arrow.up.fill")
+                    }
+
+                    Divider()
+
                     Button(role: .destructive) {
                         tripStore.deleteTrip(trip)
                     } label: {
@@ -289,11 +314,25 @@ struct PackingView: View {
         }
         .sheet(isPresented: $showingWeather) {
             WeatherDestinationSheet(
-                destination: .constant(""),
-                onConfirm: { _ in
+                destination: $weatherDestination,
+                onConfirm: { dest in
+                    weatherDestination = dest
                     showingWeather = false
+                    Task { await loadWeatherSuggestions(for: dest) }
                 }
             )
+        }
+        .sheet(isPresented: $showingWeatherSuggestions) {
+            WeatherSuggestionsSheet(
+                trip: trip,
+                suggestions: weatherSuggestions,
+                destination: weatherDestination
+            )
+            .environmentObject(tripStore)
+        }
+        .sheet(isPresented: $showingExportSheet) {
+            ExportOptionsSheet(trip: trip)
+                .environmentObject(tripStore)
         }
         .sheet(isPresented: $showingFeedback) {
             PostTripFeedbackView(trip: trip)
@@ -318,6 +357,11 @@ struct PackingView: View {
         .sheet(isPresented: $showingPrint) {
             PrintPreviewView(trip: trip, items: tripStore.currentTripItems)
         }
+        .alert("Trip duplicated!", isPresented: $showingDuplicateSuccess) {
+            Button("OK") {}
+        } message: {
+            Text("Your new trip has been created with the same items. Update the dates to get started.")
+        }
     }
 
     private func checkPassportReminder() {
@@ -339,6 +383,38 @@ struct PackingView: View {
             tripStore.toggleItem(passport)
         }
         showingPassportReminder = false
+    }
+
+    private func duplicateTrip() {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
+        if let _ = tripStore.duplicateTrip(trip) {
+            logger.info("Duplicated trip '\(trip.name)'")
+            showingDuplicateSuccess = true
+        }
+    }
+
+    private func loadWeatherSuggestions(for destination: String) async {
+        guard !destination.isEmpty else { return }
+        let result = await WeatherService.shared.fetchWeather(
+            for: destination,
+            startDate: trip.startDate,
+            endDate: trip.endDate
+        )
+        switch result {
+        case .success(let data):
+            let generated = await WeatherService.shared.generateSuggestions(from: data)
+            await MainActor.run {
+                weatherSuggestions = generated
+                if !weatherSuggestions.isEmpty {
+                    showingWeatherSuggestions = true
+                }
+            }
+        case .failure:
+            await MainActor.run {
+                weatherSuggestions = []
+            }
+        }
     }
 }
 
