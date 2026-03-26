@@ -114,7 +114,7 @@ struct SettingsView: View {
                 }
 
                 Section {
-                    Link(destination: URL(string: "https://example.com/privacy")!) {
+                    Link(destination: URL(string: "https://www.haulapp.com/privacy")!) {
                         HStack {
                             Image(systemName: "hand.raised")
                                 .foregroundColor(HaulTheme.accent)

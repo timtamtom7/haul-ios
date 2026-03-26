@@ -139,10 +139,9 @@ struct TemplatesListView: View {
     }
 
     private func applyTemplate(_ template: PackingTemplate) {
-        if let tripId = tripId, let apply = onApply {
-            apply(template)
-            dismiss()
-        }
+        guard let _ = tripId, let apply = onApply else { return }
+        apply(template)
+        dismiss()
     }
 
     private func deleteTemplate(_ template: PackingTemplate) {

@@ -214,12 +214,6 @@ struct PackingView: View {
                     }
 
                     Button {
-                        showingTemplates = true
-                    } label: {
-                        Label("Templates", systemImage: "doc.on.doc")
-                    }
-
-                    Button {
                         showingCommunity = true
                     } label: {
                         Label("Community", systemImage: "globe")

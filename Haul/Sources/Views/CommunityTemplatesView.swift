@@ -160,21 +160,23 @@ struct CommunityTemplatesView: View {
             categories: community.categories,
             isBuiltIn: false
         )
-        tripStore.saveTemplate(name: packingTemplate.name, description: packingTemplate.description, categories: packingTemplate.categories)
+        _ = tripStore.saveTemplate(name: packingTemplate.name, description: packingTemplate.description, categories: packingTemplate.categories)
     }
 
     private func applyTemplate(_ community: CommunityTemplate) {
-        if let tripId = tripId, let onApply = onApply {
-            let packingTemplate = PackingTemplate(
-                id: nil,
-                name: community.name,
-                description: community.description,
-                categories: community.categories,
-                isBuiltIn: false
-            )
-            onApply(packingTemplate)
-            dismiss()
+        guard let _ = tripId, let onApply = onApply else {
+            // No valid trip context — silently ignore (template was still imported to library)
+            return
         }
+        let packingTemplate = PackingTemplate(
+            id: nil,
+            name: community.name,
+            description: community.description,
+            categories: community.categories,
+            isBuiltIn: false
+        )
+        onApply(packingTemplate)
+        dismiss()
     }
 }
 
