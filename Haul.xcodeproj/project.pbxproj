@@ -26,6 +26,7 @@
 		675888C06545F78A058EDF47 /* CommunityTemplatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1297D3EFCE0129F3072F7 /* CommunityTemplatesView.swift */; };
 		67C3D6CB3D66CC549D24AFAB /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496BB620D922A3012FB34070 /* CommunityView.swift */; };
 		6D6A504DF0559F87C49A2004 /* PhotoStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2C84A562BEF90290103797 /* PhotoStorageService.swift */; };
+		751E281510769D22C8429BAA /* HaulR11Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5DFBE243D691D2197E2706 /* HaulR11Service.swift */; };
 		792C61A0D1F9B1F6CAE018F9 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 97290B257DFA756D54B924D7 /* SQLite */; };
 		85050883A160175077E3D964 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893018187A8C55817F4E7B7 /* SubscriptionManager.swift */; };
 		91FE070AED0EB49C8B9BE8B9 /* ErrorStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCA66EE46202BA10CFC69AC /* ErrorStateView.swift */; };
@@ -86,6 +87,7 @@
 		496BB620D922A3012FB34070 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
 		4A769FE440B9672EC97CE18A /* HaulApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaulApp.swift; sourceTree = "<group>"; };
 		6C2F0152D64B63F9C53E2AA9 /* Haul.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Haul.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D5DFBE243D691D2197E2706 /* HaulR11Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaulR11Service.swift; sourceTree = "<group>"; };
 		75DBDAA7CDAE2C03257BBF60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		819E1E53CD9F799E8E92DE37 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		874726548C7413D6E567AB6A /* BagsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagsListView.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			children = (
 				8AA71DFD8279B062CEB8C688 /* CameraService.swift */,
 				3CB5ED409AE65899D471492D /* CommunityService.swift */,
+				6D5DFBE243D691D2197E2706 /* HaulR11Service.swift */,
 				064B7C3B91476011F67D4C80 /* InsightsService.swift */,
 				2B2C84A562BEF90290103797 /* PhotoStorageService.swift */,
 				B329ED00B1EC59B20AF73686 /* ReminderService.swift */,
@@ -357,6 +360,7 @@
 				67C3D6CB3D66CC549D24AFAB /* CommunityView.swift in Sources */,
 				91FE070AED0EB49C8B9BE8B9 /* ErrorStateView.swift in Sources */,
 				5E57FDF185944860CF9F4CFB /* HaulApp.swift in Sources */,
+				751E281510769D22C8429BAA /* HaulR11Service.swift in Sources */,
 				2E4A7A25F3EC583944A6E1EC /* InsightsService.swift in Sources */,
 				B35710EFAD867EEC1DCC8F72 /* InsightsView.swift in Sources */,
 				9E3F67D63974B15DA2CB3D68 /* NewTripSheet.swift in Sources */,

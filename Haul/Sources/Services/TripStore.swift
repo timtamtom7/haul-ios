@@ -393,7 +393,7 @@ class TripStore: ObservableObject {
         guard let db = db else { return PackingTemplate.builtInTemplates }
         do {
             let query = templates.order(templateName)
-            var result = try db.prepare(query).map { row -> PackingTemplate in
+            let dbTemplates = try db.prepare(query).map { row -> PackingTemplate in
                 let categories = decodeTemplateCategories(row[templateCategoriesJson])
                 return PackingTemplate(
                     id: row[templateId],
@@ -404,7 +404,16 @@ class TripStore: ObservableObject {
                     createdAt: row[templateCreatedAt]
                 )
             }
-            // Merge built-in templates
+            // Deduplicate by ID before merging
+            var seenIds = Set<Int64>()
+            var result: [PackingTemplate] = []
+            for template in dbTemplates {
+                if let tid = template.id, !seenIds.contains(tid) {
+                    seenIds.insert(tid)
+                    result.append(template)
+                }
+            }
+            // Append built-ins that don't already exist in DB (built-ins have id=nil, safe to always append)
             result.append(contentsOf: PackingTemplate.builtInTemplates)
             return result
         } catch {
