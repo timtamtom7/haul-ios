@@ -85,6 +85,8 @@ struct TripsListView: View {
                             .cornerRadius(12)
                         }
                         .padding(.top, 8)
+                        .accessibilityLabel("New trip")
+                        .accessibilityHint("Creates a new packing trip")
                     }
                     .padding(.horizontal, 20)
                     .padding(.top, 16)
@@ -127,6 +129,9 @@ struct TripsListView: View {
             .sheet(isPresented: $showingPricing) {
                 PricingView()
             }
+            .onAppear {
+                HaulHaptics.shared.warm()
+            }
             .alert("Trip limit reached", isPresented: $showingTripLimitAlert) {
                 Button("See Plans") {
                     showingPricing = true
@@ -161,8 +166,7 @@ struct TripsListView: View {
     }
 
     private func handleNewTripTap() {
-        let generator = UIImpactFeedbackGenerator(style: .medium)
-        generator.impactOccurred()
+        HaulHaptics.shared.mediumImpact()
         if canCreateTrip {
             showingNewTrip = true
         } else {
@@ -246,7 +250,7 @@ struct TripCardView: View {
 
                 if trip.isOngoing {
                     Text("NOW")
-                        .font(.system(size: 9, weight: .bold))
+                        .font(.system(size: 11, weight: .bold))
                         .foregroundColor(.white)
                         .padding(.horizontal, 6)
                         .padding(.vertical, 2)

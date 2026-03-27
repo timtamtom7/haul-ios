@@ -164,7 +164,7 @@ struct PricingTierCard: View {
 
                             if tier == .travel {
                                 Text("BEST")
-                                    .font(.system(size: 9, weight: .bold))
+                                    .font(.system(size: 11, weight: .bold))
                                     .foregroundColor(.white)
                                     .padding(.horizontal, 6)
                                     .padding(.vertical, 2)
@@ -174,7 +174,7 @@ struct PricingTierCard: View {
 
                             if tier == .pack {
                                 Text("POPULAR")
-                                    .font(.system(size: 9, weight: .bold))
+                                    .font(.system(size: 11, weight: .bold))
                                     .foregroundColor(.white)
                                     .padding(.horizontal, 6)
                                     .padding(.vertical, 2)

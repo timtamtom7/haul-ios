@@ -64,13 +64,15 @@ struct BagsListView: View {
                             }
                             .padding(14)
                             .background(HaulTheme.surfaceLight.opacity(0.5))
-                            .cornerRadius(16)
+                            .cornerRadius(HaulTheme.radiusLG)
                             .overlay(
-                                RoundedRectangle(cornerRadius: 16)
+                                RoundedRectangle(cornerRadius: HaulTheme.radiusLG)
                                     .stroke(HaulTheme.accent.opacity(0.3), style: StrokeStyle(lineWidth: 1, dash: [8]))
                             )
                         }
                         .buttonStyle(.plain)
+                        .accessibilityLabel("Add another bag")
+                        .accessibilityHint("Creates a new bag for this trip")
 
                         Spacer(minLength: 40)
                     }
@@ -156,11 +158,11 @@ struct AllItemsBagCard: View {
             if totalCount > 0 {
                 GeometryReader { geometry in
                     ZStack(alignment: .leading) {
-                        RoundedRectangle(cornerRadius: 4)
+                        RoundedRectangle(cornerRadius: HaulTheme.radiusXS)
                             .fill(HaulTheme.unchecked.opacity(0.3))
                             .frame(height: 6)
 
-                        RoundedRectangle(cornerRadius: 4)
+                        RoundedRectangle(cornerRadius: HaulTheme.radiusXS)
                             .fill(progress == 1.0 ? HaulTheme.checkedGreen : HaulTheme.accent)
                             .frame(width: geometry.size.width * progress, height: 6)
                     }
@@ -247,11 +249,11 @@ struct BagCardView: View {
             if totalCount > 0 {
                 GeometryReader { geometry in
                     ZStack(alignment: .leading) {
-                        RoundedRectangle(cornerRadius: 2)
+                        RoundedRectangle(cornerRadius: HaulTheme.radiusXS)
                             .fill(HaulTheme.unchecked.opacity(0.3))
                             .frame(height: 4)
 
-                        RoundedRectangle(cornerRadius: 2)
+                        RoundedRectangle(cornerRadius: HaulTheme.radiusXS)
                             .fill(progress == 1.0 ? HaulTheme.checkedGreen : bagColor)
                             .frame(width: geometry.size.width * progress, height: 4)
                     }
@@ -337,6 +339,8 @@ struct AddBagSheet: View {
                                     .cornerRadius(10)
                                 }
                                 .buttonStyle(.plain)
+                                .accessibilityLabel(type.rawValue)
+                                .accessibilityAddTraits(selectedType == type ? .isSelected : [])
                             }
                         }
                     }
@@ -349,7 +353,7 @@ struct AddBagSheet: View {
                             .textCase(.uppercase)
 
                         HStack(spacing: 12) {
-                            ForEach(colorOptions, id: \.self) { color in
+                            ForEach(Array(colorOptions.enumerated()), id: \.element) { index, color in
                                 Button {
                                     selectedColor = color
                                 } label: {
@@ -370,6 +374,8 @@ struct AddBagSheet: View {
                                     }
                                 }
                                 .buttonStyle(.plain)
+                                .accessibilityLabel("Bag color option \(index + 1)")
+                                .accessibilityAddTraits(selectedColor == color ? .isSelected : [])
                             }
                         }
                     }
@@ -415,6 +421,8 @@ struct AddBagSheet: View {
                             .background(HaulTheme.checkedGreen)
                             .cornerRadius(12)
                     }
+                    .accessibilityLabel("Add bag")
+                    .accessibilityHint("Creates the new bag for this trip")
                 }
                 .padding(20)
             }
@@ -541,6 +549,8 @@ struct BagDetailSheet: View {
                             .background(Color(hex: bag.colorHex).opacity(0.1))
                             .cornerRadius(12)
                         }
+                        .accessibilityLabel("Add item to bag")
+                        .accessibilityHint("Adds a new item to this bag")
 
                         // Delete bag
                         Button {
@@ -557,6 +567,8 @@ struct BagDetailSheet: View {
                             .background(Color.red.opacity(0.08))
                             .cornerRadius(12)
                         }
+                        .accessibilityLabel("Delete bag")
+                        .accessibilityHint("Removes this bag and moves items to Unassigned")
 
                         Spacer(minLength: 40)
                     }

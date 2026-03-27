@@ -159,9 +159,8 @@ struct PackingView: View {
                     // Empty packing list state
                     if sortedCategories.isEmpty {
                         EmptyPackingListView {
+                            HaulHaptics.shared.lightImpact()
                             showingAddItem = true
-                            let generator = UIImpactFeedbackGenerator(style: .light)
-                            generator.impactOccurred()
                         }
                         .padding(.horizontal, 20)
                     }
@@ -184,8 +183,7 @@ struct PackingView: View {
 
                     // Add item button
                     Button {
-                        let generator = UIImpactFeedbackGenerator(style: .light)
-                        generator.impactOccurred()
+                        HaulHaptics.shared.lightImpact()
                         showingAddItem = true
                     } label: {
                         HStack {
@@ -199,6 +197,8 @@ struct PackingView: View {
                         .background(HaulTheme.surfaceLight.opacity(0.8))
                         .cornerRadius(12)
                     }
+                    .accessibilityLabel("Add item")
+                    .accessibilityHint("Adds a new item to your packing list")
                     .padding(.horizontal, 20)
                     .padding(.top, 8)
 
@@ -284,6 +284,7 @@ struct PackingView: View {
             }
         }
         .onAppear {
+            HaulHaptics.shared.warm()
             if let tripId = trip.id {
                 tripStore.fetchItems(for: tripId)
             }
@@ -386,8 +387,7 @@ struct PackingView: View {
     }
 
     private func duplicateTrip() {
-        let generator = UINotificationFeedbackGenerator()
-        generator.notificationOccurred(.success)
+        HaulHaptics.shared.success()
         if let _ = tripStore.duplicateTrip(trip) {
             logger.info("Duplicated trip '\(trip.name)'")
             showingDuplicateSuccess = true
@@ -438,6 +438,8 @@ struct QuickActionButton: View {
             .cornerRadius(20)
         }
         .buttonStyle(.plain)
+        .accessibilityLabel(label)
+        .accessibilityHint("Opens \(label.lowercased())")
     }
 }
 
@@ -563,8 +565,7 @@ struct PackingItemRow: View {
 
     var body: some View {
         Button {
-            let generator = UIImpactFeedbackGenerator(style: .medium)
-            generator.impactOccurred()
+            HaulHaptics.shared.mediumImpact()
             onToggle()
         } label: {
             HStack(spacing: 12) {
@@ -762,8 +763,7 @@ struct AddItemSheet: View {
                     Spacer()
 
                     Button {
-                        let generator = UIImpactFeedbackGenerator(style: .medium)
-                        generator.impactOccurred()
+                        HaulHaptics.shared.mediumImpact()
                         if !itemName.isEmpty {
                             tripStore.addItem(to: tripId, name: itemName, category: selectedCategory)
                             dismiss()

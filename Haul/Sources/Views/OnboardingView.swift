@@ -79,6 +79,9 @@ struct OnboardingContainerView: View {
                 .padding(.bottom, 40)
             }
         }
+        .onAppear {
+            HaulHaptics.shared.warm()
+        }
     }
 }
 
@@ -290,7 +293,7 @@ struct OnboardingPage3: View {
                             .font(.system(size: 12))
                             .foregroundColor(HaulTheme.accent)
                         Text("PACKING LIST")
-                            .font(.system(size: 9, weight: .bold, design: .default))
+                            .font(.system(size: 11, weight: .bold, design: .default))
                             .foregroundColor(HaulTheme.textSecondary)
                             .tracking(2)
                         Spacer()
@@ -320,7 +323,7 @@ struct OnboardingPage3: View {
                                             .frame(width: 18, height: 18)
 
                                         Image(systemName: "checkmark")
-                                            .font(.system(size: 9, weight: .bold))
+                                            .font(.system(size: 11, weight: .bold))
                                             .foregroundColor(.white)
                                     }
                                 }
@@ -447,8 +450,7 @@ struct OnboardingPage4: View {
 
             // CTA Button
             Button {
-                let generator = UINotificationFeedbackGenerator()
-                generator.notificationOccurred(.success)
+                HaulHaptics.shared.success()
                 onComplete()
             } label: {
                 Text("Start your first trip")
@@ -461,6 +463,8 @@ struct OnboardingPage4: View {
             }
             .padding(.horizontal, 32)
             .padding(.bottom, 40)
+            .accessibilityLabel("Start your first trip")
+            .accessibilityHint("Begins setting up your first packing trip")
         }
     }
 }
@@ -478,7 +482,7 @@ struct SmartBadge: View {
                 .foregroundColor(.white)
 
             Text(label)
-                .font(.system(size: 9, weight: .medium))
+                .font(.system(size: 11, weight: .medium))
                 .foregroundColor(.white)
         }
         .padding(.horizontal, 8)

@@ -90,8 +90,7 @@ struct NewTripSheet: View {
                             .disabled(currentStep == 0 && tripName.isEmpty)
                         } else {
                             Button {
-                                let generator = UINotificationFeedbackGenerator()
-                                generator.notificationOccurred(.success)
+                                HaulHaptics.shared.success()
                                 saveTrip()
                             } label: {
                                 Text("Start Packing")
@@ -102,6 +101,8 @@ struct NewTripSheet: View {
                                     .background(HaulTheme.checkedGreen)
                                     .cornerRadius(10)
                             }
+                            .accessibilityLabel("Start packing")
+                            .accessibilityHint("Creates the trip and begins your packing list")
                         }
                     }
                     .padding(.horizontal, 20)
@@ -132,6 +133,9 @@ struct NewTripSheet: View {
                 Button("OK", role: .cancel) {}
             } message: {
                 Text("The photo couldn't be saved. Make sure you have enough storage space.")
+            }
+            .onAppear {
+                HaulHaptics.shared.warm()
             }
         }
     }
