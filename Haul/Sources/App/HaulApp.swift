@@ -7,18 +7,20 @@ struct HaulApp: App {
 
     var body: some Scene {
         WindowGroup {
-            if hasCompletedOnboarding {
-                TripsListView()
-                    .environmentObject(tripStore)
-            } else {
-                OnboardingContainerView {
-                    hasCompletedOnboarding = true
-                    UserDefaults.standard.set(true, forKey: "hasCompletedOnboarding")
+            ZStack {
+                if hasCompletedOnboarding {
+                    TripsListView()
+                        .environmentObject(tripStore)
+                } else {
+                    OnboardingContainerView {
+                        hasCompletedOnboarding = true
+                        UserDefaults.standard.set(true, forKey: "hasCompletedOnboarding")
+                    }
                 }
             }
-        }
-        .onAppear {
-            ReminderService.shared.requestAuthorization()
+            .onAppear {
+                ReminderService.shared.requestAuthorization()
+            }
         }
     }
 }
