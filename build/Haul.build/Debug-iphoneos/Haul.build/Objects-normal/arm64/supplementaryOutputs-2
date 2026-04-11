@@ -1,0 +1,30 @@
+{
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Services/CommunityService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CommunityService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CommunityService.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CommunityService.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CommunityService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CommunityService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/CommunityTemplatesView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CommunityTemplatesView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CommunityTemplatesView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CommunityTemplatesView.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CommunityTemplatesView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CommunityTemplatesView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/CommunityView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CommunityView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CommunityView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CommunityView.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CommunityView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/CommunityView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/ErrorStateView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ErrorStateView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ErrorStateView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ErrorStateView.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ErrorStateView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/ErrorStateView.swiftdeps"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Models/PackingItem.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PackingItem.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PackingItem.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PackingItem.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PackingItem.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PackingItem.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/NewTripSheet.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/NewTripSheet.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/NewTripSheet.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/NewTripSheet.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/NewTripSheet.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/NewTripSheet.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/OnboardingView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/OnboardingView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/OnboardingView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/OnboardingView.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/OnboardingView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/OnboardingView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/PackingView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PackingView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PackingView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PackingView.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PackingView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PackingView.swiftdeps"
+  }
+}

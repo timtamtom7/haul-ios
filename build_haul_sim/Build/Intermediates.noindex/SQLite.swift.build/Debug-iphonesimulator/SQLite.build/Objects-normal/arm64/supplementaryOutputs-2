@@ -1,0 +1,30 @@
+{
+  "/Users/mauriello/Dev/haul-ios/build_haul_sim/SourcePackages/checkouts/SQLite.swift/Sources/SQLite/Core/Connection+Pragmas.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Connection+Pragmas.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Connection+Pragmas.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Connection+Pragmas.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Connection+Pragmas.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Connection+Pragmas.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/build_haul_sim/SourcePackages/checkouts/SQLite.swift/Sources/SQLite/Core/Connection.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Connection.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Connection.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Connection.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Connection.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Connection.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/build_haul_sim/SourcePackages/checkouts/SQLite.swift/Sources/SQLite/Core/Errors.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Errors.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Errors.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Errors.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Errors.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Errors.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/build_haul_sim/SourcePackages/checkouts/SQLite.swift/Sources/SQLite/Core/Result.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Result.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Result.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Result.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Result.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/SQLite.swift.build/Debug-iphonesimulator/SQLite.build/Objects-normal/arm64/Result.swiftdeps"
+  }
+}

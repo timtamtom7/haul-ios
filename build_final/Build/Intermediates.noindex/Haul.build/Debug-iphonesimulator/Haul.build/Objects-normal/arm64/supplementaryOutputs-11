@@ -1,0 +1,30 @@
+{
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Models/Bag.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/Bag.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/Bag.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/Bag.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/Bag.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/Bag.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Services/CameraService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/CameraService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/CameraService.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/CameraService.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/CameraService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/CameraService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/BagsListView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/BagsListView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/BagsListView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/BagsListView.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/BagsListView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/BagsListView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/CameraView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/CameraView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/CameraView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/CameraView.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/CameraView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/CameraView.swiftdeps"
+  }
+}

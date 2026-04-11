@@ -1,0 +1,23 @@
+{
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Models/Trip.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/Trip.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/Trip.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/Trip.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/Trip.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/Trip.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Utilities/Theme.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/Theme.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/Theme.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/Theme.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/Theme.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/Theme.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/TemplatesListView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/TemplatesListView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/TemplatesListView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/TemplatesListView.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/TemplatesListView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/TemplatesListView.swiftdeps"
+  }
+}

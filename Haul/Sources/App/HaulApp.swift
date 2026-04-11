@@ -10,14 +10,15 @@ struct HaulApp: App {
             if hasCompletedOnboarding {
                 TripsListView()
                     .environmentObject(tripStore)
-                    .preferredColorScheme(.light)
             } else {
                 OnboardingContainerView {
                     hasCompletedOnboarding = true
                     UserDefaults.standard.set(true, forKey: "hasCompletedOnboarding")
                 }
-                .preferredColorScheme(.light)
             }
+        }
+        .onAppear {
+            ReminderService.shared.requestAuthorization()
         }
     }
 }

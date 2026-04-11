@@ -1,0 +1,30 @@
+{
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Services/ReminderService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/ReminderService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/ReminderService.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/ReminderService.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/ReminderService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/ReminderService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Services/SubscriptionManager.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/SubscriptionManager.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/SubscriptionManager.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/SubscriptionManager.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/SubscriptionManager.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/SubscriptionManager.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/SettingsView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/SettingsView.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/SettingsView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/SubscriptionsView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/SubscriptionsView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/SubscriptionsView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/SubscriptionsView.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/SubscriptionsView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_final/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/SubscriptionsView.swiftdeps"
+  }
+}

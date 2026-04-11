@@ -1,0 +1,30 @@
+{
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/App/HaulApp.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/HaulApp.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/HaulApp.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/HaulApp.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/HaulApp.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/HaulApp.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Services/HaulR11Service.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/HaulR11Service.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/HaulR11Service.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/HaulR11Service.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/HaulR11Service.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/HaulR11Service.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Services/InsightsService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/InsightsService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/InsightsService.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/InsightsService.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/InsightsService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/InsightsService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/InsightsView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/InsightsView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/InsightsView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/InsightsView.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/InsightsView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/InsightsView.swiftdeps"
+  }
+}

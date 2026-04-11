@@ -1,0 +1,23 @@
+{
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Services/WeatherService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherService.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherService.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/WeatherWidgetView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherWidgetView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherWidgetView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherWidgetView.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherWidgetView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/WeatherWidgetView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps"
+  }
+}

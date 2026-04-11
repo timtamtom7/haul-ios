@@ -1,0 +1,23 @@
+{
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Services/SyncService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SyncService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SyncService.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SyncService.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SyncService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SyncService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/SuitcasePhotoView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SuitcasePhotoView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SuitcasePhotoView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SuitcasePhotoView.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SuitcasePhotoView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SuitcasePhotoView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/SyncView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SyncView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SyncView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SyncView.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SyncView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build/Haul.build/Debug-iphoneos/Haul.build/Objects-normal/arm64/SyncView.swiftdeps"
+  }
+}

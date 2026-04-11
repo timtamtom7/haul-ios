@@ -1,0 +1,23 @@
+{
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Services/TripStore.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/TripStore.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/TripStore.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/TripStore.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/TripStore.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/TripStore.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/TripsListView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/TripsListView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/TripsListView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/TripsListView.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/TripsListView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/TripsListView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/WardrobeView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/WardrobeView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/WardrobeView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/WardrobeView.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/WardrobeView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/WardrobeView.swiftdeps"
+  }
+}

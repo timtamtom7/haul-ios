@@ -1,0 +1,30 @@
+{
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Services/PhotoStorageService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PhotoStorageService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PhotoStorageService.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PhotoStorageService.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PhotoStorageService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PhotoStorageService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/PostTripFeedbackView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PostTripFeedbackView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PostTripFeedbackView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PostTripFeedbackView.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PostTripFeedbackView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PostTripFeedbackView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/PricingView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PricingView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PricingView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PricingView.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PricingView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PricingView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/haul-ios/Haul/Sources/Views/PrintChecklistView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PrintChecklistView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PrintChecklistView.d",
+    "diagnostics" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PrintChecklistView.dia",
+    "object" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PrintChecklistView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/haul-ios/build_haul_sim/Build/Intermediates.noindex/Haul.build/Debug-iphonesimulator/Haul.build/Objects-normal/arm64/PrintChecklistView.swiftdeps"
+  }
+}
