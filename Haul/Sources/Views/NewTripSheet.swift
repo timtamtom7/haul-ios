@@ -155,6 +155,7 @@ struct NewTripSheet: View {
                         .padding(16)
                         .background(HaulTheme.surfaceLight)
                         .cornerRadius(12)
+                        .accessibilityLabel("Trip name")
                 }
 
                 VStack(alignment: .leading, spacing: 8) {
@@ -170,6 +171,7 @@ struct NewTripSheet: View {
                         .padding(12)
                         .background(HaulTheme.surfaceLight)
                         .cornerRadius(12)
+                        .accessibilityLabel("Trip start date")
                 }
 
                 VStack(alignment: .leading, spacing: 8) {
@@ -185,6 +187,7 @@ struct NewTripSheet: View {
                         .padding(12)
                         .background(HaulTheme.surfaceLight)
                         .cornerRadius(12)
+                        .accessibilityLabel("Trip end date")
                 }
             }
             .padding(.horizontal, 20)
@@ -416,6 +419,7 @@ struct NewTripSheet: View {
                     HStack {
                         TextField("e.g. 3x T-shirts", text: $newItemName)
                             .font(.system(size: 15))
+                            .accessibilityLabel("New item name")
 
                         Picker("", selection: $selectedCategory) {
                             ForEach(categories, id: \.self) { cat in

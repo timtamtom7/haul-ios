@@ -57,6 +57,14 @@ struct SettingsView: View {
                         }
                     }
                     .tint(HaulTheme.checkedGreen)
+                    .accessibilityLabel("Departure Reminders")
+                    .onChange(of: notificationsEnabled) { _, newValue in
+                        if newValue {
+                            ReminderService.shared.requestAuthorization()
+                        } else {
+                            ReminderService.shared.cancelAllReminders()
+                        }
+                    }
                 } header: {
                     Text("Notifications")
                 } footer: {
@@ -126,6 +134,7 @@ struct SettingsView: View {
                         }
                     }
                     .foregroundColor(HaulTheme.textPrimary)
+                    .accessibilityLabel("Privacy Policy")
                 } header: {
                     Text("Legal")
                 }
@@ -142,6 +151,7 @@ struct SettingsView: View {
                                 .foregroundColor(.orange)
                         }
                     }
+                    .accessibilityLabel("Reset onboarding flow")
                 } header: {
                     Text("Developer")
                 } footer: {

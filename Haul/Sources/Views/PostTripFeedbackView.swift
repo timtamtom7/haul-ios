@@ -65,6 +65,7 @@ struct PostTripFeedbackView: View {
                                             .font(.system(size: 32))
                                             .foregroundColor(star <= rating ? .yellow : HaulTheme.unchecked)
                                             .scaleEffect(star <= rating ? 1.1 : 1.0)
+                                            .accessibilityLabel("\(star) star\(star == 1 ? "" : "s")")
                                     }
                                 }
                             }
@@ -255,6 +256,7 @@ struct PostTripFeedbackView: View {
                                 .cornerRadius(12)
                         }
                         .disabled(rating == 0)
+                        .accessibilityHint("Submits your trip feedback")
 
                         Spacer(minLength: 40)
                     }

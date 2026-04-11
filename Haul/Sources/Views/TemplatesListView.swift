@@ -266,14 +266,15 @@ struct TemplateCardView: View {
                         } label: {
                             HStack {
                                 Image(systemName: "plus.circle.fill")
-                                Text("Apply Template")
+                                Text("Use This Template")
                             }
                             .font(.system(size: 14, weight: .semibold))
                             .foregroundColor(.white)
                             .padding(.horizontal, 16)
                             .padding(.vertical, 10)
                             .background(HaulTheme.accent)
-                            .cornerRadius(8)
+                            .cornerRadius(HaulTheme.radiusSM)
+                            .accessibilityLabel("Apply \(template.name) template")
                         }
 
                         if let onDelete = onDelete {
@@ -285,7 +286,7 @@ struct TemplateCardView: View {
                                     .foregroundColor(.red)
                                     .padding(10)
                                     .background(Color.red.opacity(0.1))
-                                    .cornerRadius(8)
+                                    .cornerRadius(HaulTheme.radiusSM)
                             }
                         }
                     }
@@ -296,7 +297,7 @@ struct TemplateCardView: View {
             }
         }
         .background(VisualEffectBlur(blurStyle: .systemMaterial))
-        .cornerRadius(16)
+        .cornerRadius(HaulTheme.radiusLG)
     }
 
     private var templateIcon: String {
@@ -344,7 +345,7 @@ struct SaveTemplateSheet: View {
                             .font(.system(size: 17))
                             .padding(16)
                             .background(HaulTheme.surfaceLight)
-                            .cornerRadius(12)
+                            .cornerRadius(HaulTheme.radiusMD)
                     }
 
                     VStack(alignment: .leading, spacing: 8) {
@@ -358,7 +359,7 @@ struct SaveTemplateSheet: View {
                             .font(.system(size: 17))
                             .padding(16)
                             .background(HaulTheme.surfaceLight)
-                            .cornerRadius(12)
+                            .cornerRadius(HaulTheme.radiusMD)
                     }
 
                     // Items preview
@@ -409,7 +410,7 @@ struct SaveTemplateSheet: View {
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, 16)
                             .background(templateName.isEmpty ? HaulTheme.unchecked : HaulTheme.checkedGreen)
-                            .cornerRadius(12)
+                            .cornerRadius(HaulTheme.radiusMD)
                     }
                     .disabled(templateName.isEmpty)
                 }

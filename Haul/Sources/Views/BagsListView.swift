@@ -172,9 +172,9 @@ struct AllItemsBagCard: View {
         }
         .padding(16)
         .background(VisualEffectBlur(blurStyle: .systemMaterial))
-        .cornerRadius(16)
+        .cornerRadius(HaulTheme.radiusLG)
         .overlay(
-            RoundedRectangle(cornerRadius: 16)
+            RoundedRectangle(cornerRadius: HaulTheme.radiusLG)
                 .stroke(HaulTheme.accent.opacity(0.2), lineWidth: 1)
         )
     }
@@ -262,9 +262,9 @@ struct BagCardView: View {
             }
         }
         .background(VisualEffectBlur(blurStyle: .systemMaterial))
-        .cornerRadius(16)
+        .cornerRadius(HaulTheme.radiusLG)
         .overlay(
-            RoundedRectangle(cornerRadius: 16)
+            RoundedRectangle(cornerRadius: HaulTheme.radiusLG)
                 .stroke(bagColor.opacity(0.2), lineWidth: 1)
         )
         .contextMenu {
@@ -513,7 +513,7 @@ struct BagDetailSheet: View {
                         }
                         .padding(16)
                         .background(VisualEffectBlur(blurStyle: .systemMaterial))
-                        .cornerRadius(16)
+                        .cornerRadius(HaulTheme.radiusLG)
 
                         // Items grouped by category
                         let groupedItems = Dictionary(grouping: bagItems, by: { $0.category })
